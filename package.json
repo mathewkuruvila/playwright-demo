@@ -1,0 +1,16 @@
+{
+  "name": "playwright-demo",
+  "version": "1.0.0",
+  "description": "This is a sample project",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "mk"
+  ],
+  "author": "mk",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^24.0.3"
+  }
+}
