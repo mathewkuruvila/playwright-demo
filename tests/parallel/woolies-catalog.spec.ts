@@ -108,7 +108,7 @@ async function opencatalog(page: Page, pincode: string) {
 
     // await page.getByText('Woolworths Victoria Harbour').click();
 
-    await page.getByRole('link', {name : 'Weekly Catalogue VIC'}).click()
+    await page.getByRole('link', {name : 'Weekly Catalogue VIC'}).first().click()
     await page.waitForLoadState('load');   
 
     await expect(enter_Pincode).not.toBeVisible();
