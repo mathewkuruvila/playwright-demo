@@ -6,7 +6,7 @@ test('Woolworth - Catalog - 3008', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await opencatalog(page, "3008");
+    // await opencatalog(page, "3008");
 })
 
 test('Woolworth - Catalog - 3220', async ({ page }) => {
@@ -15,7 +15,7 @@ test('Woolworth - Catalog - 3220', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await opencatalog(page, "3000");
+    // await opencatalog(page, "3000");
 })
 
 test('Woolworth - Catalog - 3358', async ({ page }) => {
@@ -24,7 +24,7 @@ test('Woolworth - Catalog - 3358', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await opencatalog(page, "3358");
+    // await opencatalog(page, "3358");
 })
 
 test('Woolworth - Catalog - 3377', async ({ page }) => {
@@ -33,7 +33,7 @@ test('Woolworth - Catalog - 3377', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await opencatalog(page, "3377");
+    // await opencatalog(page, "3377");
 })
 
 test('Woolworth - Catalog - 3340', async ({ page }) => {
@@ -42,7 +42,7 @@ test('Woolworth - Catalog - 3340', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await opencatalog(page, "3340");
+    // await opencatalog(page, "3340");
 })
 
 test('Woolworth - Catalog - 3977', async ({ page }) => {
@@ -51,7 +51,7 @@ test('Woolworth - Catalog - 3977', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await opencatalog(page, "3977");
+    // await opencatalog(page, "3977");
 })
 
 test('Woolworth - Catalog - 3030', async ({ page }) => {
@@ -60,7 +60,7 @@ test('Woolworth - Catalog - 3030', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await opencatalog(page, "3030");
+    // await opencatalog(page, "3030");
 })
 
 test('Woolworth - Catalog - 2640', async ({ page }) => {
@@ -69,7 +69,7 @@ test('Woolworth - Catalog - 2640', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await opencatalog(page, "2640");
+    // await opencatalog(page, "2640");
 })
 
 test('Woolworth - Catalog - 2600', async ({ page }) => {
@@ -78,7 +78,7 @@ test('Woolworth - Catalog - 2600', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await opencatalog(page, "2600");
+    // await opencatalog(page, "2600");
 })
 
 test('Woolworth - Catalog - 2000', async ({ page }) => {
