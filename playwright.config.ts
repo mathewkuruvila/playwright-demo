@@ -54,9 +54,20 @@ export default defineConfig({
     //   name: 'Microsoft Edge',
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
     // },
+    { name: 'setup', testMatch: /.*\.setup\.ts/ },
     {
-      name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+      name: 'Auth Tests',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome', 
+        storageState: '.auth/user.json',
+      },
+      testMatch: /sauce.spec.ts/,
+      dependencies: ['setup'],
+    },
+    {
+      name: 'Woolies Catalog Tests',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome', 
+      },
+      testMatch: /wool.*.spec.ts/,
     },
   ],
 

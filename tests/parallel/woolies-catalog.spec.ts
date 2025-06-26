@@ -1,6 +1,6 @@
 import { test, expect, Locator, Page } from '@playwright/test';
 
-test('Woolworth - Catalog - 3008', async ({ page }) => {
+test('Woolworth - Catalog - 3008', {tag: "@wool"}, async ({ page }) => {
     
     test.setTimeout(120000);
 
@@ -9,7 +9,7 @@ test('Woolworth - Catalog - 3008', async ({ page }) => {
     await opencatalog(page, "3008");
 })
 
-test('Woolworth - Catalog - 3220', async ({ page }) => {
+test('Woolworth - Catalog - 3220', {tag: "@wool"}, async ({ page }) => {
     
     test.setTimeout(120000);
 

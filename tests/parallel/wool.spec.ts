@@ -1,22 +1,27 @@
 import { test, expect, Locator, Page } from '@playwright/test';
+import HomePage from '../../pages/woolies';
+// import { step } from '../base';
 
 
-test('Woolworth - Other Services - Big W', async ({ page }) => {
+test('Woolworth - Other Services - Big W', {tag: "@wool"}, async ({ page }) => {
     
     test.setTimeout(120000);
 
     await page.goto('http://www.woolworths.com.au/');
+
+    const homePage = new HomePage(page);
   
-    await every_OtherServices(page, "Big W");
+    await homePage.every_OtherServices(page, "Big W");
 })
 
-test('Woolworth - Other Services - Everyday Market', async ({ page }) => {
+test('Woolworth - Other Services - Everyday Market', {tag: "@wool"}, async ({ page }) => {
     
     test.setTimeout(120000);
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await every_OtherServices(page, "Everyday Market");
+    const homePage = new HomePage(page);
+    await homePage.every_OtherServices(page, "Everyday Market");
 })
 
 test('Woolworth - Other Services - Milkrun', async ({ page }) => {
@@ -25,7 +30,8 @@ test('Woolworth - Other Services - Milkrun', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await every_OtherServices(page, "Milkrun");
+    const homePage = new HomePage(page);
+    await homePage.every_OtherServices(page, "Milkrun");
 })
 
 test('Woolworth - Other Services - Woolworths at Work', async ({ page }) => {
@@ -34,7 +40,8 @@ test('Woolworth - Other Services - Woolworths at Work', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await every_OtherServices(page, "Woolworths at Work");
+    const homePage = new HomePage(page);
+    await homePage.every_OtherServices(page, "Woolworths at Work");
 })
 
 test('Woolworth - Other Services - Healthy Life', async ({ page }) => {
@@ -43,7 +50,8 @@ test('Woolworth - Other Services - Healthy Life', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await every_OtherServices(page, "Healthy Life");
+    const homePage = new HomePage(page);
+    await homePage.every_OtherServices(page, "Healthy Life");
 })
 
 test('Woolworth - Other Services - MyDeal ', async ({ page }) => {
@@ -52,7 +60,8 @@ test('Woolworth - Other Services - MyDeal ', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await every_OtherServices(page, "MyDeal");
+    const homePage = new HomePage(page);
+    await homePage.every_OtherServices(page, "MyDeal");
 })
 
 test('Woolworth - Other Services - Petstock', async ({ page }) => {
@@ -61,10 +70,14 @@ test('Woolworth - Other Services - Petstock', async ({ page }) => {
 
     await page.goto('http://www.woolworths.com.au/');
   
-    await every_OtherServices(page, "Petstock");
+    const homePage = new HomePage(page);
+    await homePage.every_OtherServices(page, "Petstock");
 })
 
-async function every_OtherServices(page: Page, service: string) {
+
+
+
+async function every_OtherService(page: Page, service: string) {
 
     await page.getByRole('button', {name : 'Everyday & Other Services'}).click()
 
