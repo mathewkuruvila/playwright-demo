@@ -3,8 +3,11 @@ import path from 'path';
 
 const authFile = path.join(__dirname, '../.auth/user.json');
 
-setup('authenticate', async ({ page }) => {
+setup('authenticate', async ({ page }, workerInfo) => {
   // Perform authentication steps. Replace these actions with your own.
+
+  console.log(`\n\nRunning authentication setup for worker: ${workerInfo.workerIndex} and project: ${workerInfo.project.name}\n\n`);
+
   await page.goto('https://www.saucedemo.com/');
   await page.locator('[data-test="username"]').fill('standard_user');
   await page.locator('[data-test="password"]').fill('secret_sauce');
