@@ -64,6 +64,12 @@ export default defineConfig({
       dependencies: ['setup'],
     },
     {
+      name: 'Demo Tests',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome', 
+      },
+      testMatch: /fix.*.spec.ts/,
+    },
+    {
       name: 'Woolies Catalog Tests',
       use: { ...devices['Desktop Chrome'], channel: 'chrome', 
       },
