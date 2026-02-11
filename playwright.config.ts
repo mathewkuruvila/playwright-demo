@@ -75,6 +75,16 @@ export default defineConfig({
       },
       testMatch: /wool.*.spec.ts/,
     },
+    {
+      name: 'Sections Links Tests',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+      testMatch: /sections-links.*\.spec\.ts/,
+    },
+    {
+      name: 'YouTube Tests',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+      testMatch: /.*seed\.spec\.ts/,
+    },
   ],
 
   /* Run your local dev server before starting the tests */
