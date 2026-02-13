@@ -85,6 +85,16 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'], channel: 'chrome' },
       testMatch: /.*seed\.spec\.ts/,
     },
+    {
+      name: 'ShareThis Tests',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+      testMatch: /sharethis.*\.spec\.ts/,
+    },
+    {
+      name: 'JioMart Tests',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+      testMatch: /jiomart.*\.spec\.ts/,
+    },
   ],
 
   /* Run your local dev server before starting the tests */
